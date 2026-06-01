@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=64", "wheel", "Cython>=3.0", "numpy>=1.23"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dummy-ggm"
+version = "0.1.0"
+description = "Dummy-controlled model selection for high-dimensional Gaussian graph learning (EUSIPCO 2026)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Helena Mehler" },
+    { name = "Taulant Koka" },
+    { name = "Michael Muma" },
+]
+keywords = [
+    "Gaussian graphical models",
+    "high-dimensional statistics",
+    "T-Rex selector",
+    "structure learning",
+    "model selection",
+]
+dependencies = [
+    "numpy>=1.23",
+    "scipy>=1.10",
+    "scikit-learn>=1.2",
+    "networkx>=3.0",
+    "joblib>=1.2",
+]
+
+[project.optional-dependencies]
+plotting = [
+    "matplotlib>=3.7",
+    "pandas>=2.0",
+    "scienceplots>=2.1",
+]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]

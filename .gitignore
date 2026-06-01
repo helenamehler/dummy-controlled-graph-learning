@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / build artifacts
+__pycache__/
+*.py[cod]
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Cython-generated sources and compiled extensions
+src/dummy_ggm/*.c
+src/dummy_ggm/*.cpp
+src/dummy_ggm/*.so
+src/dummy_ggm/*.pyd
+
+# Simulation outputs and generated figures
+*.npz
+*.pgf
+results/
+figures/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS / editor cruft
+.DS_Store
+.idea/
+.vscode/
+*.swp
